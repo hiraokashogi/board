@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @board_thread.name %>
+</p>
+
+<p>
+  <strong>View flag:</strong>
+  <%= @board_thread.view_flag %>
+</p>
+
+<%= link_to 'Edit', edit_board_thread_path(@board_thread) %> |
+<%= link_to 'Back', board_threads_path %>

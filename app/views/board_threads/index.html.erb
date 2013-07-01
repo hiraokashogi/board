@@ -1,0 +1,24 @@
+
+<h1>スレッドリスト</h1>
+
+<table>
+  <tbody>
+    <% @board_threads.each do |board| %>
+      <tr>
+        <td><a href="/posts/<%= board.id %>" ><%= board.name %></a></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<br>
+<div style="margin-top:20px;">
+  <%= form_for(@board_thread) do |f| %>
+   <div class="field">
+      <%= f.label "スレッド名" %><br>
+      <%= f.text_field :name %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+  <% end %>
+</div>

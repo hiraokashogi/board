@@ -1,0 +1,2 @@
+class ThredController < ApplicationController
+end

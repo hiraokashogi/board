@@ -1,0 +1,84 @@
+LOG:  database system was shut down at 2013-06-30 16:37:36 JST
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2013-06-30 20:38:31 JST
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  syntax error at or near "posts" at character 8
+STATEMENT:  delete posts 
+	;
+ERROR:  syntax error at or near "*" at character 8
+STATEMENT:  delete * from posts 
+	;
+ERROR:  database "board_development" already exists
+STATEMENT:  CREATE DATABASE "board_development" ENCODING = 'unicode'
+FATAL:  role "board" does not exist
+ERROR:  database "board_development" already exists
+STATEMENT:  CREATE DATABASE "board_development" ENCODING = 'unicode'
+FATAL:  role "board" does not exist
+ERROR:  database "board_development" already exists
+STATEMENT:  CREATE DATABASE "board_development" ENCODING = 'unicode'
+FATAL:  role "board" does not exist
+ERROR:  database "board_development" already exists
+STATEMENT:  CREATE DATABASE "board_development" ENCODING = 'unicode'
+FATAL:  role "board" does not exist
+ERROR:  cached plan must not change result type
+STATEMENT:  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1
+ERROR:  database "board_development" already exists
+STATEMENT:  CREATE DATABASE "board_development" ENCODING = 'unicode'
+FATAL:  role "board" does not exist
+ERROR:  column "thred_no" does not exist at character 8
+STATEMENT:  SELECT thred_no,1 FROM "posts"   ORDER BY thread_index
+ERROR:  column "thred_no" does not exist at character 8
+STATEMENT:  SELECT thred_no,1 FROM "posts"
+ERROR:  cached plan must not change result type
+STATEMENT:  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = $1 LIMIT 1
+ERROR:  database "board_development" already exists
+STATEMENT:  CREATE DATABASE "board_development" ENCODING = 'unicode'
+FATAL:  role "board" does not exist
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2013-07-01 00:11:51 JST
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  database "wolf_test_development" does not exist
+ERROR:  syntax error at or near "createdb" at character 1
+STATEMENT:  createdb wolf_test_development;
+ERROR:  relation "wolf_test_development" does not exist at character 15
+STATEMENT:  select * from wolf_test_development
+	;
+ERROR:  relation "wolf_test_development" does not exist at character 15
+STATEMENT:  select * from wolf_test_development
+	;
+ERROR:  database "wolf_test_development" already exists
+STATEMENT:  CREATE DATABASE "wolf_test_development" ENCODING = 'unicode'
+FATAL:  role "wolf_test" does not exist
+ERROR:  relation "wolf_test_development" does not exist at character 15
+STATEMENT:  select * from wolf_test_development
+	;
+ERROR:  column "body" of relation "test_pages" already exists
+STATEMENT:  ALTER TABLE "test_pages" ADD COLUMN "body" text
+ERROR:  relation "wolf_test_development" does not exist at character 15
+STATEMENT:  select * from wolf_test_development
+	;
+ERROR:  syntax error at or near "-" at character 1
+STATEMENT:  -l
+	;
+ERROR:  database "wolf_test_development" already exists
+STATEMENT:  CREATE DATABASE "wolf_test_development" ENCODING = 'unicode'
+FATAL:  role "wolf_test" does not exist
+LOG:  received smart shutdown request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2013-07-01 19:49:49 JST
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  column "body" of relation "test_pages" already exists
+STATEMENT:  ALTER TABLE "test_pages" ADD COLUMN "body" text
